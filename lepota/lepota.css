@@ -1,0 +1,129 @@
+body {
+    background-image: url("slike/11.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+}
+
+.meni {
+    width: 100%; 
+    padding: 30px 16px; 
+    z-index: 4;
+    font-size: 20pt;
+    text-align: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: helvetica;
+}
+
+.link {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px;
+    font-size: 1.5vw;
+}
+
+.link:hover {
+    color: rgb(194, 34, 122);
+}
+
+.content {
+    margin-top: 120px; 
+    text-align: center;
+    color: rgb(194, 34, 122);
+}
+
+.text {
+    max-width: 70%; 
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1vw;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.zoomable {
+    width: 90vw; 
+    max-width: 250px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.zoomable:hover {
+    transform: scale(1.5); 
+}
+
+.gif-container {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    margin-bottom: 20px;
+}
+
+.gif-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.gif-container {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    margin-bottom: 80px;
+
+}
+
+.gif-container img {
+    width: 100%; 
+    height: auto; 
+}
+@media only screen and (max-width: 1300px) {
+    .meni {
+        padding: 15px 8px; 
+        font-size: 12pt;
+    }
+
+    .link {
+        font-size: 6vw;
+    }
+
+    .text {
+        max-width: 90%; 
+        font-size: 4vw;
+    }
+
+    .gif-container {
+        position: relative;
+        bottom: 0;
+        margin-bottom: 20px;
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .gif-container img {
+        width: 350px; 
+        height: auto; 
+    }
+
+    .image-container {
+        display: block;
+        text-align: center;
+    }
+
+    .zoomable {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+}
+
+

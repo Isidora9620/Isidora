@@ -1,0 +1,187 @@
+body {
+    background-image: url(slike/pozadina.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200vh;
+  
+  }
+  
+
+.meni {
+    width: 100%; 
+    padding: 30px; 
+    z-index: 4;
+    text-align: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    font-family: helvetica;
+}
+
+.link {
+    color: rgb(90, 45, 105); 
+    text-decoration: none; 
+    line-height: 40px;
+    font-size: 1.5vw;
+}
+
+.link {
+    margin: 30 10px;  
+}
+
+a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.gif {
+    display: inline-block;
+    position: relative;
+  }
+
+  .gif img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content {
+    text-align: center;
+    color: beige;
+    margin-top: 900px;
+    font-family: helvetica;
+    margin-left: 300px; 
+    margin-right: 300px; 
+
+}
+.skin {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 300px;
+}
+.skin img {
+    width: 270px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+.skin img:hover {
+    transform: scale(1.8); 
+}
+
+
+
+.baner {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 300px;
+}
+
+.baner img {
+    width: 1500px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+
+.poster {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 300px;
+}
+.poster img {
+    width: 250px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+.poster img:hover {
+    transform: scale(1.8); 
+}
+
+
+.baner2 {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 300px;
+}
+
+.baner2 img {
+    width: 1500px; 
+    height: auto; 
+}
+
+.openskin{
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 300px;
+  
+}
+
+.openskin img {
+    width: 1000px; 
+    height: auto;
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .content {
+        margin-left: 50px; 
+        margin-right: 50px; 
+    }
+
+    .skin,
+    .baner,
+    .poster,
+    .baner2,
+    .openskin {
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+        flex-wrap: wrap;
+        margin-top: 50px; 
+    }
+
+    .gif {
+        margin-bottom: 20px; 
+    }
+
+    .skin img,
+    .baner img,
+    .poster img,
+    .baner2 img,
+    .openskin img {
+        width: 250px; 
+        height: auto; 
+    }
+
+    .link {
+        font-size: 14px; 
+    }
+
+    .meni {
+        padding: 15px 8px; 
+        font-size: 12pt;
+    }
+
+    .link {
+        font-size: 6vw;
+    }
+}

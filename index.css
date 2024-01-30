@@ -1,0 +1,165 @@
+body {
+    background-image: url("111.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.meni {
+    width: 100%;
+    padding: 30px 16px;
+    z-index: 4;
+    font-size: 20pt;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: helvetica;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    line-height: 60px;
+    font-size: 1.5vw;
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: -30 0 0 -30;
+    padding: 0;
+    display: flex;
+}
+
+.logo {
+    max-width: 100%;
+    text-align: center;
+}
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+  margin-top: -20vw;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides:first-of-type {
+  display: block;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 0, 162);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(40, 33, 38, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+    
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  main {
+    grid-template-columns: auto auto;
+    margin: 80px 0 0 -15px;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    margin-top: -15vw; 
+  }
+  .logo {
+    display: none;
+  }
+    .meni {
+        padding: 15px 8px; 
+        font-size: 12pt;
+    }
+
+    .link {
+        font-size: 6vw;
+    }
+
+}

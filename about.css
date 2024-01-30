@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin:0;
+
+    }
+
+
+.meni {
+    width: 100%; 
+    padding: 8px; 
+    z-index: 4;
+    font-size: 20pt;
+    text-align: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    font-family: helvetica;
+   
+}
+
+.link {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px;
+    line-height: 60px;
+    font-size: 1.5vw;
+}
+.meni {
+    padding: 30px 16px; 
+}
+
+.link {
+    margin: 0 10px;  
+}
+
+
+a {
+    color:white;
+    text-decoration: none;
+    }
+
+
+a:hover {
+    color:rgb(255, 0, 128);
+    } 
+
+
+    img[src="about/7.png"] {
+        width: 80%; 
+        height: auto;
+    }
+    .text {
+        width: 800px;
+        padding: 20px;
+        text-align: left; 
+        color: rgb(255, 0, 123);
+        position: fixed; 
+        top: 50%; 
+        right: 200px; 
+        transform: translateY(-50%); 
+        font-size:40px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .text {
+            width: 80%; 
+            padding: 80; 
+            position: static; 
+            top: auto; 
+            right: auto; 
+            transform: none; 
+            font-size: 20px; 
+            margin: 0 auto; 
+        }
+        img[src="about/7.png"] {
+            display: none;
+        }
+        
+.meni {
+    padding: 15px 8px; 
+    font-size: 12pt;
+}
+
+.link {
+    font-size: 6vw;
+}
+.mobilna-slika img {
+    width: 95%; 
+    height: auto; 
+
+}
+}
+    
+@media screen and (min-width: 1302px) {
+    .mobilna-slika {
+        display: none; 
+    }
+
+  }
+    

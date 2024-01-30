@@ -1,0 +1,87 @@
+body {
+    background-color: black; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
+
+
+.meni {
+    width: 100%; 
+    z-index: 4;
+    font-size: 20pt;
+    text-align: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    font-family:helvetica;
+   
+}
+
+.link {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px;
+    line-height: 60px;
+    font-size: 1.5vw;
+}
+.meni {
+    padding: 50px 16px; 
+}
+
+.link {
+    margin: 0 10px;  
+}
+
+
+a {
+    color:white;
+    text-decoration: none;
+    }
+
+
+a:hover {
+    color:rgb(0, 0, 0);
+    } 
+
+  
+      .slika {
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        width: 200px; 
+      }
+      .slika img {
+        width: 100%;
+        height: auto; 
+        display: block;
+      }
+      .slika:hover {
+        transform: scale(1.1);
+      }
+      .slika:nth-child(odd) {
+        width: calc(33.333% - 20px);
+      }
+      .slika:nth-child(even) {
+        width: calc(66.666% - 20px);
+      }
+
+
+      @media only screen and (max-width: 1300px) {
+        .meni {
+            padding: 15px 8px; 
+            font-size: 12pt;
+        }
+    
+        .link {
+            font-size: 6vw;
+        }
+      }    
